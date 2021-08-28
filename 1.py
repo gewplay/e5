@@ -82,11 +82,16 @@ def main(refresh_token,secret,cid):
 
 
 for fo in refresh_token:
-    refresh_token = fo['text']
-    sid = fo['id']
-    secret = fo['key']
-    cid = fo['cid']
-    for _ in range(6):
-        main(refresh_token,secret,cid)
-        refresh_token = refresh
-    fox(refresh_token,sid)
+    try:
+        refresh_token = fo['text']
+        sid = fo['id']
+        secret = fo['key']
+        cid = fo['cid']
+        for _ in range(1):
+            main(refresh_token,secret,cid)
+            refresh_token = refresh)
+        fox(refresh_token,sid)
+    except:
+        print('pass')
+        pass
+
