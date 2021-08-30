@@ -77,7 +77,7 @@ def main(refresh_token,secret,cid):
             print('10调用成功'+str(num1)+'次')
             print('此次运行结束时间为 :', localtime)
     except:
-        print("pass")
+        print("pass2")
         pass
 
 
@@ -92,6 +92,6 @@ for fo in refresh_token:
             refresh_token = refresh
         fox(refresh_token,sid)
     except:
-        print('pass')
+        print('pass1')
         pass
 
