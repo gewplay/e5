@@ -32,7 +32,7 @@ jobs:
         FOX: ${{ secrets.URL }} # secrets_id 提供
       run: | 
         cp 1.py 2.py
-        curl $FOX -o fox.txt
+        curl $FOX -o fox.txt -s
         sed -i '11 r fox.txt' 2.py
     - name: Test Api #Api调用
       run: | 
